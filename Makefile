@@ -15,6 +15,7 @@ all: FRC
 	done
 
 clean: FRC
+	rm -rf obj.Linux.*
 	@for x in $(SUBDIRS); \
 	do \
 		(cd $$x; echo Making $@ in:; pwd; \
